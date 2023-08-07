@@ -109,7 +109,7 @@ useHead({
       name: "og:url",
     },
     {
-      content: "https://rcakradana.me/assets/meta-image.png",
+      content: "https://rcakradana.me/assets/meta-image.jpeg",
       name: "og:image",
     },
   ],
