@@ -84,7 +84,7 @@
 import Headline from "~/components/Typo/Headline.vue";
 
 useHead({
-  title: "R Cakradana A. Y.",
+  title: "R. Cakradana A. Y.",
   meta: [
     {
       content:
@@ -97,12 +97,20 @@ useHead({
       name: "og:description",
     },
     {
-      content: "Cakradana",
+      content: "R. Cakradana A. Y.",
+      name: "author",
+    },
+    {
+      content: "R. Cakradana A. Y.",
       name: "og:title",
     },
     {
       content: "https://rcakradana.me",
       name: "og:url",
+    },
+    {
+      content: "https://rcakradana.me/assets/meta-image.png",
+      name: "og:image",
     },
   ],
 });
