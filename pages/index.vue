@@ -84,33 +84,33 @@
 import Headline from "~/components/Typo/Headline.vue";
 
 useHead({
-  title: "R. Cakradana A. Y.",
+  title: "Cakra's Portfolio",
   meta: [
+    {
+      content: "Cakra's Portfolio",
+      name: "title",
+      property: "og:title",
+    },
+    {
+      content: "website",
+      name: "type",
+      property: "og:type",
+    },
+    {
+      content: "https://rcakradana.me/assets/meta-image.jpeg",
+      name: "image",
+      property: "og:image",
+    },
+    {
+      content: "https://rcakradana.me",
+      name: "url",
+      property: "og:url",
+    },
     {
       content:
         "Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer. Explore a portfolio that blends technology and design seamlessly.",
       name: "description",
-    },
-    {
-      content:
-        "Experience the portfolio of a Software Engineer, Frontend Developer, and UI/UX Designer, showcasing a harmonious blend of tech and design expertise.",
-      name: "og:description",
-    },
-    {
-      content: "R. Cakradana A. Y.",
-      name: "author",
-    },
-    {
-      content: "R. Cakradana A. Y.",
-      name: "og:title",
-    },
-    {
-      content: "https://rcakradana.me",
-      name: "og:url",
-    },
-    {
-      content: "https://rcakradana.me/assets/meta-image.jpeg",
-      name: "og:image",
+      property: "og:description",
     },
   ],
 });
