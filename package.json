@@ -9,23 +9,24 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.1",
-    "nuxt": "^3.6.5",
     "@nuxt/content": "^2.2.2",
+    "@nuxt/devtools": "latest",
     "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@tailwindcss/typography": "^0.5.8",
     "@types/marked": "^4.0.8",
+    "@types/node": "^18.17.1",
     "highlight.js": "11.6.0",
     "marked": "^4.2.12",
+    "nuxt": "^3.6.5",
     "sharp": "^0.31.3"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^2.0.0",
     "@nuxtjs/web-vitals": "^0.2.2",
     "@pinia/nuxt": "^0.4.7",
+    "@vercel/analytics": "^1.0.1",
     "collect.js": "^4.34.3",
     "contentful": "^10.0.0-beta-v10.11",
     "pinia": "^2.0.32",
