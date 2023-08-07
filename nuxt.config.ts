@@ -6,6 +6,7 @@ export default defineNuxtConfig({
         '@nuxt/image-edge',
         '@pinia/nuxt',
     ],
+    plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
     runtimeConfig: {
         public: {
             space: process.env.CTF_SPACE_ID,
