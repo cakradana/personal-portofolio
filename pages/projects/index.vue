@@ -2,7 +2,7 @@
   <SectionBase>
     <Container>
       <Headline>
-        <span>Project</span>
+        <span>Projects</span>
       </Headline>
       <div class="grid gap-5 lg:grid-cols-3">
         <CardItem v-for="project in projects" :image="'https://'+project.fields.image.fields.file.url+`?w=1080`"
@@ -26,7 +26,7 @@ import Container from "~/components/Section/Container.vue";
 const projects = await getAllProjects()
 
 useHead({
-  title: "Project"
+  title: "Projects"
 })
 </script>
 

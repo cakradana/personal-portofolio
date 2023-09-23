@@ -2,7 +2,7 @@
   <SectionBase>
     <Container>
       <Headline>
-        <span>Blog</span>
+        <span>Blogs</span>
       </Headline>
       <div class="grid gap-5 lg:grid-cols-3">
         <CardItem
@@ -28,6 +28,6 @@ import Container from "~/components/Section/Container.vue";
 const blogs = await getAllBlogs();
 
 useHead({
-  title: "Blog",
+  title: "Blogs",
 });
 </script>
