@@ -26,6 +26,10 @@ interface BlogObject {
     metadata: {
         tags: any[]
     }
+    sys: {
+        createdAt: string,
+        id: string,
+    }
 }
 
 export const useBlogStore = defineStore('blog', {

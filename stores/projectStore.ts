@@ -17,6 +17,9 @@ interface ProjectObject {
     metadata: {
         tags: any[]
     }
+    sys: {
+        id: string,
+    }
 }
 
 export const useProjectStore = defineStore('project', {
@@ -32,7 +35,6 @@ export const useProjectStore = defineStore('project', {
     actions: {
         async fetchProject(slug: string | string[]) {
             const {$client} = useNuxtApp()
-            console.log('hai')
             await Promise.all([
                 $client.getEntries({
                     content_type: "project",
@@ -47,7 +49,6 @@ export const useProjectStore = defineStore('project', {
             })
         },
         async fetchProjects() {
-            console.log('hai')
             const {$client} = useNuxtApp()
             await Promise.all([
                 $client.getEntries({
