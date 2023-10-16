@@ -28,8 +28,8 @@ html {
 .swiper-pagination-bullet {
   background: rgb(69 10 10) !important;
   opacity: 0.5;
-  width: 20px;
-  height: 20px;
+  width: 18px !important;
+  height: 18px !important;
 }
 
 .swiper-pagination-bullet-active {
