@@ -1,14 +1,37 @@
 .dark {
-    --tw-bg-opacity: 1;
-    --tw-code-color: white;
-    --tw-code-bg: rgb(38 38 38 / var(--tw-bg-opacity));
-    background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  --tw-code-color: white;
+  --tw-code-bg: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
 .light {
-    background-color: #E8EAE7;
+  background-color: #e8eae7;
 }
 
 html {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(69 10 10) !important;
+  opacity: 0.5;
+  font-weight: 900;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(69 10 10) !important;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }

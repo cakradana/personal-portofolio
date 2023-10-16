@@ -108,11 +108,6 @@
 </template>
 
 <script>
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-
 export default {
   name: "about",
 };
@@ -125,27 +120,3 @@ useHead({
   title: "About",
 });
 </script>
-
-<style>
-
-.swiper-button-prev, .swiper-button-next {
-  color: rgb(69 10 10) !important;
-  opacity: 0.5;
-  font-weight: 900;
-}
-
-.swiper-button-prev:hover, .swiper-button-next:hover {
-  opacity: 1;
-}
-
-.swiper-pagination-bullet {
-  background: rgb(69 10 10) !important;
-  opacity: 0.5  ;
-  width: 20px;
-  height: 20px;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-}
-</style>
