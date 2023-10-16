@@ -1,13 +1,14 @@
 <template>
   <SectionBase add-class="relative overflow-hidden">
     <Container>
-      <Swiper :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]" :slides-per-view="1" :loop="true" :effect="'creative'" :pagination="true"
-        :autoplay="{
+      <Swiper :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]" :slides-per-view="1" :loop="true"
+        :effect="'creative'" :pagination="true" :autoplay="{
           delay: 3000,
           disableOnInteraction: false,
         }" :navigation="true">
         <SwiperSlide v-for="slide in 4" :key="slide">
-          <nuxt-img :key="slide" :src="`/assets/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="1280" class="object-cover rounded-lg h-72 lg:h-96 w-full" />
+          <nuxt-img :key="slide" :src="`/assets/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="1280"
+            class="object-cover rounded-lg h-72 lg:h-96 w-full" />
         </SwiperSlide>
       </Swiper>
       <div class="relative mt-10">
@@ -15,46 +16,14 @@
           <div class="order-last xl:col-span-2">
             <div class="sticky top-24">
               <div class="prose dark:prose-invert">
-                <h3 class="text-xl font-medium">Skills</h3>
-                <ul>
-                  <li>Front-End Development</li>
-                  <ul>
-                    <li>HTML</li>
-                    <li>Cascading Style Sheets (CSS)</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Web Design</li>
-                    <li>Browser Developer Tools</li>
-                    <ul>
-                      <li>Chrome DevTools</li>
-                    </ul>
-                    <li>Package Managers</li>
-                    <ul>
-                      <li>npm</li>
-                      <li>yarn</li>
-                      <li>pnpm</li>
-                    </ul>
-                  </ul>
-                  <li>JavaScript Frameworks</li>
-                  <ul>
-                    <li>Vue.js</li>
-                    <li>Nuxt.js</li>
-                    <li>React.js</li>
-                    <li>Next.js</li>
-                  </ul>
-                  <li>Version Control</li>
-                  <ul>
-                    <li>Git</li>
-                  </ul>
-                  <li>CSS Frameworks</li>
-                  <ul>
-                    <li>Tailwind CSS</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                  <li>Design</li>
-                  <ul>
-                    <li>Web Design</li>
-                  </ul>
-                </ul>
+                <h3 class="text-2xl font-medium font-display dark:text-primary-200 text-red-950">Skills</h3>
+                <div class="divide-y divide-gray-300">
+                  <template v-for="(skill, index) in skills" :key="index">
+                    <Accordion :title="skill.title" :id="`skill-${index}`" :active="skill.active">
+                      <ul class="my-0" v-html="skill.content" />
+                    </Accordion>
+                  </template>
+                </div>
               </div>
             </div>
           </div>
@@ -107,14 +76,47 @@
   </SectionBase>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "about",
+
+  data() {
+    return {
+      skills: [
+        {
+          title: "Front-End Development",
+          content: "<li>HTML</li> <li>Cascading Style Sheets (CSS)</li> <li>JavaScript</li> <li>Responsive Web Design</li> <li>Browser Developer Tools</li> <ul> <li>Chrome DevTools</li> </ul> <li>Package Managers</li> <ul> <li>npm</li> <li>yarn</li> <li>pnpm</li> </ul>",
+          active: false,
+        },
+        {
+          title: "JavaScript Frameworks",
+          content: "<li>Vue.js</li> <li>Nuxt.js</li> <li>React.js</li> <li>Next.js</li>",
+          active: false,
+        },
+        {
+          title: "Version Control",
+          content: "<li>Git</li>",
+          active: false,
+        },
+        {
+          title: "CSS Frameworks",
+          content: "<li>Tailwind CSS</li> <li>Bootstrap</li>",
+          active: false,
+        },
+        {
+          title: "Design",
+          content: "<li>Web Design</li>",
+          active: false,
+        },
+      ]
+    }
+  }
 };
 </script>
-<script setup>
+<script setup lang="ts">
 import Headline from "~/components/Typo/Headline.vue";
 import Container from "~/components/Section/Container.vue";
+import Accordion from "~/components/Accordion/Accordion.vue";
 
 useHead({
   title: "About",
