@@ -6,8 +6,8 @@ defineProps<{
 }>()
 
 const types = {
-  solid: 'bg-primary-700 text-white dark:bg-primary-500 dark:text-primary-950 dark:hover:bg-primary-600',
-  outline: 'ring-2 ring-primary-700 ring-inset hover:text-white text-primary-800 hover:bg-primary-700 dark:ring-primary-500 dark:hover:bg-primary-500 dark:hover:text-primary-950 dark:text-primary-500'
+  solid: 'bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300',
+  outline: 'ring-2 ring-primary-700 dark:ring-primary-300 hover:ring-primary-800 ring-inset hover:text-white text-primary-700 hover:bg-primary-800 dark:ring-primary-500 dark:hover:bg-primary-300 dark:hover:text-primary-950 dark:text-primary-300'
 }
 </script>
 
