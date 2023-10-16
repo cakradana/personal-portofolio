@@ -5,6 +5,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxt/image-edge',
         '@pinia/nuxt',
+        'nuxt-swiper',
     ],
     plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
     runtimeConfig: {
@@ -78,5 +79,12 @@ export default defineNuxtConfig({
             'avatars0.githubusercontent.com',
             'images.ctfassets.net'
         ]
-    }
+    },
+    swiper: {
+        // Swiper options
+        //----------------------
+        // prefix: 'Swiper',
+        // styleLang: 'css',
+        // modules: ['navigation', 'pagination'], // all modules are imported by default
+    },
 })

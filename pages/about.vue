@@ -1,37 +1,69 @@
 <template>
   <SectionBase add-class="relative overflow-hidden">
     <Container>
-      <div class="relative">
+      <Swiper :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]" :slides-per-view="1" :loop="true" :effect="'creative'" :pagination="true"
+        :autoplay="{
+          delay: 3000,
+          disableOnInteraction: false,
+        }" :navigation="true">
+        <SwiperSlide v-for="slide in 4" :key="slide">
+          <nuxt-img :key="slide" :src="`/assets/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="1280" class="object-cover rounded-lg h-72 lg:h-96 w-full" />
+        </SwiperSlide>
+      </Swiper>
+      <div class="relative mt-10">
         <div class="grid xl:grid-cols-6 gap-10">
           <div class="order-last xl:col-span-2">
             <div class="sticky top-24">
               <div class="prose dark:prose-invert">
                 <h3 class="text-xl font-medium">Skills</h3>
                 <ul>
-                  <li>HTML</li>
-                  <li>Cascading Style Sheets (CSS)</li>
-                  <li>JavaScript</li>
                   <li>Front-End Development</li>
-                  <li>Responsive Web Design</li>
-                  <li>Desain Web</li>
-                  <li>Vue.js</li>
-                  <li>Vuex</li>
-                  <li>Tailwind CSS</li>
-                  <li>MySQLi</li>
+                  <ul>
+                    <li>HTML</li>
+                    <li>Cascading Style Sheets (CSS)</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>Browser Developer Tools</li>
+                    <ul>
+                      <li>Chrome DevTools</li>
+                    </ul>
+                    <li>Package Managers</li>
+                    <ul>
+                      <li>npm</li>
+                      <li>yarn</li>
+                      <li>pnpm</li>
+                    </ul>
+                  </ul>
+                  <li>JavaScript Frameworks</li>
+                  <ul>
+                    <li>Vue.js</li>
+                    <li>Nuxt.js</li>
+                    <li>React.js</li>
+                    <li>Next.js</li>
+                  </ul>
+                  <li>Version Control</li>
+                  <ul>
+                    <li>Git</li>
+                  </ul>
+                  <li>CSS Frameworks</li>
+                  <ul>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                  <li>Design</li>
+                  <ul>
+                    <li>Web Design</li>
+                  </ul>
                 </ul>
               </div>
             </div>
           </div>
           <div class="xl:col-span-4">
             <Headline>
-              <span
-                >Hey there! My name is R. Cakradana Ardhanurahman Yudhatama, and
-                Cakra in short.</span
-              >
+              <span>Hey there! My name is R. Cakradana Ardhanurahman Yudhatama, and
+                Cakra in short.</span>
             </Headline>
-            <div
-              class="prose mb-3 xl:mb-5 dark:prose-invert xl:text-lg max-w-none"
-            >
+            <div class="prose mb-3 xl:mb-5 dark:prose-invert xl:text-lg max-w-none">
               <p>
                 As a frontend developer, I have always been driven by my passion
                 for creating beautiful and intuitive websites and applications.
@@ -76,6 +108,8 @@
 </template>
 
 <script>
+import 'swiper/css';
+
 export default {
   name: "about",
 };
@@ -89,4 +123,26 @@ useHead({
 });
 </script>
 
-<style scoped></style>
+<style>
+
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(69 10 10) !important;
+  opacity: 0.5;
+  font-weight: 900;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(69 10 10) !important;
+  opacity: 0.5  ;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+</style>
