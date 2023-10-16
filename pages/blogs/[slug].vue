@@ -26,10 +26,9 @@
             <div
               class="aspect-square w-16 p-1 border-2 border-primary-600 h-16 rounded-full overflow-hidden"
             >
-              <img
+              <nuxt-img
                 src="/assets/me-reg.png"
-                class="rounded-full w-full"
-                alt=""
+                class="w-16 aspect-square rounded-full" width="320" height="320"
               />
             </div>
           </div>
