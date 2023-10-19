@@ -8,7 +8,7 @@
         }" :navigation="true">
         <SwiperSlide v-for="slide in 4" :key="slide">
           <nuxt-img :key="slide" :src="`/assets/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="1280"
-            class="object-cover rounded-lg h-72 lg:h-96 w-full" />
+            class="object-cover h-72 lg:h-96 w-full" />
         </SwiperSlide>
       </Swiper>
       <div class="relative mt-10">
@@ -16,7 +16,7 @@
           <div class="order-last xl:col-span-2">
             <div class="sticky top-24">
               <div class="prose dark:prose-invert">
-                <h3 class="text-2xl font-medium font-display dark:text-primary-200 text-red-950">Skills</h3>
+                <h3 class="text-2xl font-medium font-display dark:text-primary-200 text-primary-950">Skills</h3>
                 <div class="divide-y divide-gray-300">
                   <template v-for="(skill, index) in skills" :key="index">
                     <Accordion :title="skill.title" :id="`skill-${index}`" :active="skill.active">

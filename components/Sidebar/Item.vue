@@ -15,7 +15,7 @@ const isActive = computed(() => {
 	<div class="relative group text-center py-2">
 		<div :class="[
 				'w-8/12 lg:w-7/12 mx-auto relative mb-0.5 flex overflow-hidden justify-center rounded-full py-1',
-				(isActive ? 'text-red-950' : '')
+				(isActive ? 'text-primary-950' : '')
 		]">
 			<span :class="[
 					(isActive ? 'scale-100 bg-primary-500' : 'scale-0 group-hover:scale-100 bg-neutral-200 dark:bg-neutral-700'),
