@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         'nuxt-swiper',
     ],
-    plugins: [{ src: '~/plugins/vercel.ts', mode: 'client' }],
+    plugins: [{ src: '~/plugins/analytics.client.ts', mode: 'client' }],
     runtimeConfig: {
         public: {
             space: process.env.CTF_SPACE_ID,
