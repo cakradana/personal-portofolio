@@ -1,15 +1,13 @@
 <script setup lang="ts">
-
-import Container from "~/components/Section/Container.vue";
 </script>
 
 <template>
   <nav class="sticky lg:hidden top-0 z-50 py-3 border-b dark:border-neutral-800 bg-white dark:bg-neutral-900">
-    <Container>
+    <SectionContainer>
       <div class="relative flex gap-3 items-center">
         <div class="grow">
           <NuxtLink to="/" class="text-lg font-extrabold">
-            <span>Cakradana</span>
+            <span>rcakradana.me</span>
           </NuxtLink>
         </div>
         <div class="flex items-center gap-2.5">
@@ -21,10 +19,6 @@ import Container from "~/components/Section/Container.vue";
           </button>
         </div>
       </div>
-    </Container>
+    </SectionContainer>
   </nav>
 </template>
-
-<style scoped>
-
-</style>

@@ -15,7 +15,7 @@ defineProps<{
     ]"
   >
     <div class="aspect-video rounded-2xl overflow-hidden">
-      <nuxt-img :src="image" :alt="title" />
+      <nuxt-img :src="image" :alt="title" class="w-full" />
     </div>
     <div class="px-5 py-4 space-y-2">
       <div
@@ -38,6 +38,3 @@ defineProps<{
     <nuxt-link :to="to" class="absolute inset-0"></nuxt-link>
   </div>
 </template>
-
-<style scoped>
-</style>

@@ -1,10 +1,10 @@
 <template>
   <SectionBase>
-    <Container>
-      <Headline>
+    <SectionContainer>
+      <TypoHeadline>
         <span>Blogs</span>
-      </Headline>
-      <div class="grid gap-5 lg:grid-cols-3">
+      </TypoHeadline>
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         <CardItem
           v-for="blog in blogs"
           :image="
@@ -17,13 +17,11 @@
           :key="`nk-${blog.sys.id}`"
         />
       </div>
-    </Container>
+    </SectionContainer>
   </SectionBase>
 </template>
 <script setup lang="ts">
 import { getAllBlogs } from "~/repositories/blogRepository";
-import Headline from "~/components/Typo/Headline.vue";
-import Container from "~/components/Section/Container.vue";
 
 const blogs = await getAllBlogs();
 

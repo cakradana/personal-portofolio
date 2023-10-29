@@ -33,7 +33,3 @@ const isActive = computed(() => {
 		<nuxt-link :to="to" class="absolute inset-0"/>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

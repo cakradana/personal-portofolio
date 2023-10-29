@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import ColorToggle from "~/components/Sidebar/ColorToggle.vue";
 </script>
 
@@ -84,7 +83,3 @@ import ColorToggle from "~/components/Sidebar/ColorToggle.vue";
 		</div>
 	</div>
 </template>
-
-<style scoped>
-
-</style>

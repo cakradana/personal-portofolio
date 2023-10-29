@@ -22,7 +22,3 @@ const types = {
     <NuxtLink v-if="typeof to == 'string'" :to="to" class="absolute inset-0"></NuxtLink>
   </div>
 </template>
-
-<style scoped>
-
-</style>

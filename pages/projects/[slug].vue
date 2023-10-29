@@ -1,22 +1,22 @@
 <template>
   <section-base override-class="pt-7 lg:pt-28 lg:pb-0" add-class="bg-neutral-800 dark:bg-neutral-950 text-white">
-    <Container>
+    <SectionContainer>
       <div class="mb-7 lg:mb-28">
         <div class="text-lg flex gap-1 mb-5">
           <h1 v-text="project.fields.title"></h1>
           <span>—</span>
         </div>
-        <p class="font-display xl:leading-tight text-3xl xl:text-5xl" v-text="project.fields.description"></p>
+        <p class="font-display text-3xl lg:text-5xl" v-text="project.fields.description"></p>
       </div>
-    </Container>
+    </SectionContainer>
     <nuxt-img :src="`https://`+project.fields.image.fields.file.url" :alt="project.fields.image.fields.title"
               class="w-full mb-5" loading="lazy"/>
   </section-base>
   <SectionBase>
-    <Container>
-      <div class="grid xl:grid-cols-5 gap-10">
-        <div class="xl:col-span-2">
-          <div class="grid gap-7 xl:gap-10 xl:sticky xl:top-36">
+    <SectionContainer>
+      <div class="grid lg:grid-cols-5 gap-10">
+        <div class="lg:col-span-2">
+          <div class="grid gap-7 lg:gap-10 lg:sticky lg:top-36">
             <div class="grid gap-3">
               <h3 class="font-bold font-display text-xl" v-text="project.fields.title"></h3>
               <p v-text="project.fields.projectDesc"></p>
@@ -43,17 +43,16 @@
             </div>
           </div>
         </div>
-        <div class="xl:col-span-3">
+        <div class="lg:col-span-3">
           <div class="prose dark:prose-invert max-w-none" v-html="project.contentRendered"></div>
         </div>
       </div>
-    </Container>
+    </SectionContainer>
   </SectionBase>
 </template>
 
 <script setup lang="ts">
 import {getSingle} from "~/repositories/projectRepository";
-import Container from "~/components/Section/Container.vue";
 
 const route = useRoute()
 const project = await getSingle(route.params.slug)
@@ -84,7 +83,3 @@ useHead({
 })
 
 </script>
-
-<style scoped>
-
-</style>

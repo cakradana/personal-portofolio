@@ -1,29 +1,26 @@
 <template>
   <SectionBase add-class="relative">
     <SectionContainer>
-      <div class="grid lg:grid-cols-2 lg:gap-10 lg:items-center">
-        <div class="xl:order-first">
+      <div class="grid lg:grid-cols-2 lg:gap-10">
+        <div class="lg:order-first">
           <a
             class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10"
             href="mailto:rcakradana@gmail.com"
             >rcakradana@gmail.com</a
           >
-          <Headline>
-            <span>👋 Hi! </span>
-            <span>I'm Cakra</span>
-            <div class="w-max">
+          <TypoHeadline>
+            <p class="inline"><span class="inline-block animate-wave transform origin-[70%_70%]">👋</span> Hi! </p>
+            <p class="inline">I'm Cakra</p>
+            <div class="w-max mb-5">
               <div
-                class="text-3xl animate-typing overflow-hidden whitespace-nowrap border-r-4 dark:border-r-white border-r-neutral-950 pr-5 lg:pb-2 lg:text-5xl text-primary-600 dark:text-primary-500"
+                class="text-2xl sm:text-4xl xl:text-5xl 2xl:text-6xl sm:pb-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 dark:border-r-white border-r-neutral-950 pr-5 text-primary-600 dark:text-primary-500"
               >
                 {{ currentJob }}
               </div>
             </div>
-            <!-- <div class="block xl:hidden">
-              <div class="text-primary-600 dark:text-primary-500">Frontend Developer</div>
-            </div> -->
-          </Headline>
+          </TypoHeadline>
           <p
-            class="xl:text-lg mb-7 xl:w-9/12 text-neutral-600 dark:text-neutral-400"
+            class="lg:text-lg mb-5 lg:w-9/12 text-neutral-600 dark:text-neutral-400"
           >
             I have over
             <span v-text="new Date().getFullYear() - 2021"></span> years of
@@ -49,9 +46,9 @@
             <ButtonPrimary to="/about" type="outline" label="About me" />
           </div>
         </div>
-        <div class="hidden xl:block">
+        <div class="hidden lg:block">
           <div
-            class="mx-auto xl:w-96 mb-10 p-1 rounded-2xl bg-gradient-to-br shadow-lg xl:shadow-2xl from-primary-400 to-primary-900 dark:from-primary-300 dark:to-primary-800"
+            class="mx-auto lg:w-96 mb-5 p-1 rounded-2xl bg-gradient-to-br shadow-lg lg:shadow-2xl from-primary-400 to-primary-900 dark:from-primary-300 dark:to-primary-800"
           >
             <div
               class="relative group bg-gradient-to-t text-center overflow-hidden from-neutral-300 to-neutral-200 dark:to-neutral-800 dark:from-neutral-900 rounded-xl pt-5"
@@ -61,7 +58,7 @@
               ></span>
               <img
                 src="/assets/my-photo.png"
-                class="inline-block w-64 xl:w-96 relative rounded-xl"
+                class="inline-block w-64 lg:w-96 relative rounded-xl"
                 loading="lazy"
                 alt="Cakra"
               />
@@ -81,8 +78,6 @@
 </template>
 
 <script setup lang="ts">
-import Headline from "~/components/Typo/Headline.vue";
-
 useHead({
   title: "Cakra's Portfolio",
   meta: [
@@ -128,6 +123,3 @@ onMounted(() => {
   }, 4000);
 });
 </script>
-
-<style scoped>
-</style>

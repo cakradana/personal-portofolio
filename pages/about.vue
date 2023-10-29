@@ -1,6 +1,6 @@
 <template>
   <SectionBase add-class="relative overflow-hidden">
-    <Container>
+    <SectionContainer>
       <Swiper :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]" :slides-per-view="1" :loop="true"
         :effect="'creative'" :pagination="true" :autoplay="{
           delay: 3000,
@@ -12,10 +12,10 @@
         </SwiperSlide>
       </Swiper>
       <div class="relative mt-10">
-        <div class="grid xl:grid-cols-6 gap-10">
-          <div class="order-last xl:col-span-2">
+        <div class="grid lg:grid-cols-6 gap-10">
+          <div class="order-last lg:col-span-2">
             <div class="sticky top-24">
-              <div class="prose dark:prose-invert">
+              <div class="prose dark:prose-invert max-w-full">
                 <h3 class="text-2xl font-medium font-display dark:text-primary-200 text-primary-950">Skills</h3>
                 <div class="divide-y divide-gray-300">
                   <template v-for="(skill, index) in skills" :key="index">
@@ -27,12 +27,12 @@
               </div>
             </div>
           </div>
-          <div class="xl:col-span-4">
-            <Headline>
+          <div class="lg:col-span-4">
+            <TypoHeadline>
               <span>Hey there! My name is R. Cakradana Ardhanurahman Yudhatama, and
                 Cakra in short.</span>
-            </Headline>
-            <div class="prose mb-3 xl:mb-5 dark:prose-invert xl:text-lg max-w-none">
+            </TypoHeadline>
+            <div class="prose mb-3 lg:mb-5 dark:prose-invert lg:text-lg max-w-none">
               <p>
                 As a frontend developer, I have always been driven by my passion
                 for creating beautiful and intuitive websites and applications.
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-    </Container>
+    </SectionContainer>
   </SectionBase>
 </template>
 
@@ -114,10 +114,6 @@ export default {
 };
 </script>
 <script setup lang="ts">
-import Headline from "~/components/Typo/Headline.vue";
-import Container from "~/components/Section/Container.vue";
-import Accordion from "~/components/Accordion/Accordion.vue";
-
 useHead({
   title: "About",
 });

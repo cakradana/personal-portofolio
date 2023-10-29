@@ -38,7 +38,3 @@ const toggleDarkMode = () => {
     <button class="absolute inset-0" type="button" @click="toggleDarkMode"></button>
   </div>
 </template>
-
-<style scoped>
-
-</style>
