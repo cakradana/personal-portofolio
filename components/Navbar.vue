@@ -15,7 +15,7 @@
             <NavbarColorToggle/>
           </div>
           <button type="button" class="">
-            <nuxt-img src="/assets/me-reg.png" class="w-10 aspect-square rounded-full" width="320" height="320"/>
+            <nuxt-img src="/img/me-reg.png" class="w-10 aspect-square rounded-full" width="320" height="320"/>
           </button>
         </div>
       </div>

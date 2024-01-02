@@ -7,7 +7,7 @@
           disableOnInteraction: false,
         }" :navigation="true">
         <SwiperSlide v-for="slide in 4" :key="slide">
-          <nuxt-img :key="slide" :src="`/assets/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="1280"
+          <nuxt-img :key="slide" :src="`/img/about-pic-${slide}.jpg`" :alt="`Slide${slide}`" width="640"
             class="object-cover h-72 lg:h-96 w-full" />
         </SwiperSlide>
       </Swiper>

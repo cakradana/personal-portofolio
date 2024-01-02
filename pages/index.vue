@@ -56,11 +56,12 @@
               <span
                 class="bg-primary-900 dark:bg-primary-400 group-hover:scale-150 transition-all absolute animate-pulse rounded-full bottom-0 translate-y-1/2 blur-3xl left-0 w-full aspect-square"
               ></span>
-              <img
-                src="/assets/my-photo.png"
+              <nuxt-img
+                src="/img/my-photo.png"
                 class="inline-block w-64 lg:w-96 relative rounded-xl"
                 loading="lazy"
                 alt="Cakra"
+                width="640"
               />
               <div
                 class="absolute z-50 bg-neutral-100 flex place-items-center gap-5 shadow-lg p-2 rounded-xl top-2 right-2"
@@ -92,7 +93,7 @@ useHead({
       property: "og:type",
     },
     {
-      content: "https://rcakradana.me/assets/meta-image.jpeg",
+      content: "https://rcakradana.me/img/meta-image.jpeg",
       name: "image",
       property: "og:image",
     },
