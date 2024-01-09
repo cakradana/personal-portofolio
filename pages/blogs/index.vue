@@ -8,7 +8,7 @@
         <CardItem
           v-for="blog in blogs"
           :image="
-            'https://' + blog.fields.image.fields.file.url + `?w=1080&fm=webp`
+            'https:' + blog.fields.image.fields.file.url + `?w=1080&fm=webp`
           "
           :title="blog.fields.title"
           :category="blog.fields.blogCategory.fields.title"
@@ -25,7 +25,12 @@ import { getAllBlogs } from "~/repositories/blogRepository";
 
 const blogs = await getAllBlogs();
 
-useHead({
-  title: "Blogs",
-});
+useSeoMeta({
+  title: 'R Cakradana | Blogs',
+  
+  ogUrl: 'https://rcakradana.me/blogs',
+  ogTitle: 'R Cakradana | Blogs',
+  
+  twitterTitle: 'R Cakradana | Blogs',
+})
 </script>

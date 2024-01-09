@@ -13,3 +13,21 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'R Cakradana',
+  description: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
+  
+  ogType: 'website',
+  ogUrl: 'https://rcakradana.me',
+  ogTitle: 'R Cakradana',
+  ogDescription: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
+  ogImage: 'https://rcakradana.me/img/meta-image.jpeg',
+  
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'R Cakradana',
+  twitterDescription: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
+  twitterImage: 'https://rcakradana.me/img/meta-image.jpeg',
+})
+</script>

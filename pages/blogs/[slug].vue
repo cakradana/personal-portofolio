@@ -2,7 +2,7 @@
   <SectionBase>
     <div class="absolute top-0 left-0 w-full h-72 lg:h-96 overflow-hidden">
       <nuxt-img
-        :src="`https://` + blog.fields.image.fields.file.url + `?fm=webp`"
+        :src="`https:` + blog.fields.image.fields.file.url + `?fm=webp`"
         :alt="blog.fields.image.fields.title"
         class="w-full mb-5 opacity-30"
         loading="lazy"
@@ -63,25 +63,21 @@ if (typeof blog === "undefined" || !blog) {
     statusCode: 404,
     statusMessage: "Post not found",
   });
-} else {
-  useHead({
-    title: blog.fields.title,
-    meta: [
-      {
-        name: "twitter:image",
-        content: blog.fields.image.fields.file.url,
-      },
-      {
-        name: "og:image",
-        content: blog.fields.image.fields.file.url,
-      },
-      {
-        name: "description",
-        content: blog.fields.description,
-      },
-    ],
-  });
 }
+
+useSeoMeta({
+  title: 'R Cakradana | '+blog.fields.title+'',
+  description: blog.fields.description,
+  
+  ogUrl: 'https://rcakradana.me/blogs/'+blog.fields.slug+'',
+  ogTitle: 'R Cakradana | '+blog.fields.title+'',
+  ogDescription: blog.fields.description,
+  ogImage: 'https:'+blog.fields.image.fields.file.url+'',
+  
+  twitterTitle: 'R Cakradana | '+blog.fields.title+'',
+  twitterDescription: blog.fields.description,
+  twitterImage: 'https:'+blog.fields.image.fields.file.url+'',
+})
 
 onMounted(() => {
   codeCopier();

@@ -9,7 +9,7 @@
         <p class="font-display text-3xl lg:text-5xl" v-text="project.fields.description"></p>
       </div>
     </SectionContainer>
-    <nuxt-img :src="`https://`+project.fields.image.fields.file.url" :alt="project.fields.image.fields.title"
+    <nuxt-img :src="`https:`+project.fields.image.fields.file.url" :alt="project.fields.image.fields.title"
               class="w-full mb-5" loading="lazy"/>
   </section-base>
   <SectionBase>
@@ -64,22 +64,19 @@ if (!project) {
   })
 }
 
-useHead({
-  title: project.fields.title ?? '',
-  meta: [
-    {
-      name: 'twitter:image',
-      content: project.fields.image.fields.file.url
-    },
-    {
-      name: 'og:image',
-      content: project.fields.image.fields.file.url
-    },
-    {
-      name: 'description',
-      content: project.fields.description
-    }
-  ]
-})
+console.log(project.fields.image.fields.file.url)
 
+useSeoMeta({
+  title: 'R Cakradana | '+project.fields.title+'',
+  description: project.fields.description,
+  
+  ogUrl: 'https://rcakradana.me/projects/'+project.fields.slug+'',
+  ogTitle: 'R Cakradana | '+project.fields.title+'',
+  ogDescription: project.fields.description,
+  ogImage: 'https:'+project.fields.image.fields.file.url+'',
+  
+  twitterTitle: 'R Cakradana | '+project.fields.title+'',
+  twitterDescription: project.fields.description,
+  twitterImage: 'https:'+project.fields.image.fields.file.url+'',
+})
 </script>

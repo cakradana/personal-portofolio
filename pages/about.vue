@@ -76,45 +76,41 @@
   </SectionBase>
 </template>
 
-<script lang="ts">
-export default {
-  name: "about",
-
-  data() {
-    return {
-      skills: [
-        {
-          title: "Front-End Development",
-          content: "<li>HTML</li> <li>Cascading Style Sheets (CSS)</li> <li>JavaScript</li> <li>Responsive Web Design</li> <li>Browser Developer Tools</li> <ul> <li>Chrome DevTools</li> </ul> <li>Package Managers</li> <ul> <li>npm</li> <li>yarn</li> <li>pnpm</li> </ul>",
-          active: false,
-        },
-        {
-          title: "JavaScript Frameworks",
-          content: "<li>Vue.js</li> <li>Nuxt.js</li> <li>React.js</li> <li>Next.js</li>",
-          active: false,
-        },
-        {
-          title: "Version Control",
-          content: "<li>Git</li>",
-          active: false,
-        },
-        {
-          title: "CSS Frameworks",
-          content: "<li>Tailwind CSS</li> <li>Bootstrap</li>",
-          active: false,
-        },
-        {
-          title: "Design",
-          content: "<li>Web Design</li>",
-          active: false,
-        },
-      ]
-    }
-  }
-};
-</script>
 <script setup lang="ts">
-useHead({
-  title: "About",
-});
+useSeoMeta({
+  title: 'R Cakradana | About',
+  
+  ogUrl: 'https://rcakradana.me/about',
+  ogTitle: 'R Cakradana | About',
+  
+  twitterTitle: 'R Cakradana | About',
+})
+
+const skills = ref([
+  {
+    title: "Front-End Development",
+    content: "<li>HTML</li> <li>Cascading Style Sheets (CSS)</li> <li>JavaScript</li> <li>Responsive Web Design</li> <li>Browser Developer Tools</li> <ul> <li>Chrome DevTools</li> </ul> <li>Package Managers</li> <ul> <li>npm</li> <li>yarn</li> <li>pnpm</li> </ul>",
+    active: false,
+  },
+  {
+    title: "JavaScript Frameworks",
+    content: "<li>Vue.js</li> <li>Nuxt.js</li> <li>React.js</li> <li>Next.js</li>",
+    active: false,
+  },
+  {
+    title: "Version Control",
+    content: "<li>Git</li>",
+    active: false,
+  },
+  {
+    title: "CSS Frameworks",
+    content: "<li>Tailwind CSS</li> <li>Bootstrap</li>",
+    active: false,
+  },
+  {
+    title: "Design",
+    content: "<li>Web Design</li>",
+    active: false,
+  },
+]);
 </script>

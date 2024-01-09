@@ -23,7 +23,7 @@
             class="lg:text-lg mb-5 lg:w-9/12 text-neutral-600 dark:text-neutral-400"
           >
             I have over
-            <span v-text="new Date().getFullYear() - 2021"></span> years of
+            {{ new Date().getFullYear() - 2021 }} years of
             experience in Software Engineering, and I am eager to collaborate
             with you on your next project.
           </p>
@@ -79,38 +79,6 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: "Cakra's Portfolio",
-  meta: [
-    {
-      content: "Cakra's Portfolio",
-      name: "title",
-      property: "og:title",
-    },
-    {
-      content: "website",
-      name: "type",
-      property: "og:type",
-    },
-    {
-      content: "https://rcakradana.me/img/meta-image.jpeg",
-      name: "image",
-      property: "og:image",
-    },
-    {
-      content: "https://rcakradana.me",
-      name: "url",
-      property: "og:url",
-    },
-    {
-      content:
-        "Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer. Explore a portfolio that blends technology and design seamlessly.",
-      name: "description",
-      property: "og:description",
-    },
-  ],
-});
-
 const jobs = ["Software Engineer", "Frontend Developer", "UI/UX Designer"];
 
 const currentJob = ref(jobs[0]);
