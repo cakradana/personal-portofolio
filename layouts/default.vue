@@ -1,4 +1,5 @@
 <template>
+  <SpeedInsights />
   <NuxtLoadingIndicator
     color="repeating-linear-gradient(to right,#f47572 0%,#e05f6b 25%,#cd4a65 50%,#ba355e 100%)"
   />
@@ -15,6 +16,8 @@
 </template>
 
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 useSeoMeta({
   title: 'R Cakradana',
   description: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
