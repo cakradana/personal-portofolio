@@ -102,7 +102,7 @@ export default defineNuxtConfig({
           type: "image/png",
         },
       ],
-      start_url: "/",
+      start_url: "https://rcakradana.me",
       theme_color: "#ffffff",
       background_color: "#ffffff",
       orientation: "portrait",
