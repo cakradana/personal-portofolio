@@ -1,4 +1,5 @@
 <template>
+  <VitePwaManifest />
   <SpeedInsights />
   <NuxtLoadingIndicator
     color="repeating-linear-gradient(to right,#f47572 0%,#e05f6b 25%,#cd4a65 50%,#ba355e 100%)"

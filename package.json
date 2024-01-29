@@ -17,6 +17,7 @@
     "@tailwindcss/typography": "^0.5.8",
     "@types/marked": "^4.0.8",
     "@types/node": "^18.17.1",
+    "@vite-pwa/nuxt": "^0.4.0",
     "highlight.js": "11.6.0",
     "marked": "^4.2.12",
     "nuxt": "^3.6.5",
