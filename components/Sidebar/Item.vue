@@ -30,6 +30,6 @@ const isActive = computed(() => {
 				'text-sm transition-all',
 				(isActive ? 'font-medium' : '')
 		]" v-text="label"></span>
-		<nuxt-link :to="to" class="absolute inset-0"/>
+		<nuxt-link :aria-label="label" :to="to" class="absolute inset-0"/>
 	</div>
 </template>

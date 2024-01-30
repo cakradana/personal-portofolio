@@ -19,6 +19,6 @@ const types = {
     <div>
       <span v-text="label"></span>
     </div>
-    <NuxtLink v-if="typeof to == 'string'" :to="to" class="absolute inset-0"></NuxtLink>
+    <NuxtLink v-if="typeof to == 'string'" :to="to" :aria-label="label" class="absolute inset-0"></NuxtLink>
   </div>
 </template>
