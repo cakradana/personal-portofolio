@@ -26,11 +26,11 @@ import { getAllBlogs } from "~/repositories/blogRepository";
 const blogs = await getAllBlogs();
 
 useSeoMeta({
-  title: 'R Cakradana | Blogs',
-  
-  ogUrl: 'https://rcakradana.me/blogs',
-  ogTitle: 'R Cakradana | Blogs',
-  
-  twitterTitle: 'R Cakradana | Blogs',
-})
+  title: "R Cakradana | Blogs",
+
+  ogUrl: "https://rcakradana.me/blogs",
+  ogTitle: "R Cakradana | Blogs",
+
+  twitterTitle: "R Cakradana | Blogs",
+});
 </script>
