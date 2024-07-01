@@ -67,16 +67,16 @@ if (!project) {
 console.log(project.fields.image.fields.file.url)
 
 useSeoMeta({
-  title: 'R Cakradana | '+project.fields.title+'',
-  description: project.fields.description,
+  title: `R Cakradana | ${project.fields.title}`,
+  description: `${project.fields.description}`,
   
-  ogUrl: 'https://rcakradana.me/projects/'+project.fields.slug+'',
-  ogTitle: 'R Cakradana | '+project.fields.title+'',
-  ogDescription: project.fields.description,
-  ogImage: 'https:'+project.fields.image.fields.file.url+'',
+  ogUrl: `https://rcakradana.me/projects/${project.fields.slug}`,
+  ogTitle: `R Cakradana | ${project.fields.title}`,
+  ogDescription: `${project.fields.description}`,
+  ogImage: `https:${project.fields.image.fields.file.url}`,
   
-  twitterTitle: 'R Cakradana | '+project.fields.title+'',
-  twitterDescription: project.fields.description,
-  twitterImage: 'https:'+project.fields.image.fields.file.url+'',
+  twitterTitle: `R Cakradana | ${project.fields.title}`,
+  twitterDescription: `${project.fields.description}`,
+  twitterImage: `https:${project.fields.image.fields.file.url}`,
 })
 </script>
