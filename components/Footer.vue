@@ -5,7 +5,11 @@
         <div class="mb-5 lg:mb-0">
           <span>&copy; </span>
           <span v-text="new Date().getFullYear()"></span>
-          <span> by <nuxt-link class="font-medium" to="/">R. Cakradana</nuxt-link> | </span>
+          <span> by <nuxt-link class="font-medium relative inline-block group" to="/">
+              R. Cakradana
+              <span
+                class="absolute left-0 bottom-0 w-full h-0.5 bg-primary-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+            </nuxt-link> | </span>
           <span>
             <div class="inline-flex items-center">
               made with
