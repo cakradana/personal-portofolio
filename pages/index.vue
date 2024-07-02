@@ -3,13 +3,30 @@
     <SectionContainer>
       <div class="grid lg:grid-cols-2 lg:gap-10">
         <div class="lg:order-first">
-          <a
-            class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10"
-            href="mailto:rcakradana@gmail.com"
-            >rcakradana@gmail.com</a
-          >
+          <div class="space-x-3">
+            <a
+              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out"
+              href="mailto:rcakradana@gmail.com"
+            >
+              📩 rcakradana@gmail.com
+            </a>
+            <a
+              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+              @click="
+                downloadCV(cv?.fields.cv.fields.file.url, cv?.fields.name)
+              "
+            >
+              ⬇️ Here's my CV
+            </a>
+          </div>
+
           <TypoHeadline>
-            <p class="inline"><span class="inline-block animate-wave transform origin-[70%_70%]">👋</span> Hi! </p>
+            <p class="inline">
+              <span class="inline-block animate-wave transform origin-[70%_70%]"
+                >👋</span
+              >
+              Hi!
+            </p>
             <p class="inline">I'm Cakra</p>
             <div class="w-max mb-5">
               <div
@@ -23,9 +40,9 @@
             class="lg:text-lg mb-5 lg:w-9/12 text-neutral-600 dark:text-neutral-400"
           >
             I have over
-            {{ new Date().getFullYear() - 2021 }} years of
-            experience in Software Engineering, and I am eager to collaborate
-            with you on your next project.
+            {{ new Date().getFullYear() - 2021 }} years of experience in
+            Software Engineering, and I am eager to collaborate with you on your
+            next project.
           </p>
           <ul class="grid gap-y-3 mb-10">
             <li class="flex gap-2 items-center">
@@ -79,7 +96,11 @@
 </template>
 
 <script setup lang="ts">
-const jobs = ["Software Engineer", "Frontend Developer", "UI/UX Designer"];
+import { getCv } from "~/repositories/cvRepository";
+
+const cv = await getCv();
+
+const jobs = ["Software Engineer", "Frontend Developer"];
 
 const currentJob = ref(jobs[0]);
 
@@ -91,4 +112,9 @@ onMounted(() => {
     currentJob.value = jobs[index];
   }, 4000);
 });
+
+const downloadCV = (file: string, name: string) => {
+  const url = `https:${file}`;
+  window.open(url, "_blank");
+};
 </script>
