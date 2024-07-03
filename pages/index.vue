@@ -16,7 +16,7 @@
                 downloadCV(cv?.fields.cv.fields.file.url, cv?.fields.name)
               "
             >
-              ⬇️ Here's my CV
+              ⬇️ Here's my Resume
             </a>
           </div>
 
