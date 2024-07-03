@@ -3,15 +3,15 @@
     <SectionContainer>
       <div class="grid lg:grid-cols-2 lg:gap-10">
         <div class="lg:order-first">
-          <div class="space-x-3">
+          <div class="flex flex-wrap gap-3 mb-5">
             <a
-              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out"
+              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out"
               href="mailto:rcakradana@gmail.com"
             >
               📩 rcakradana@gmail.com
             </a>
             <a
-              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium mb-5 border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+              class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
               @click="
                 downloadCV(cv?.fields.cv.fields.file.url, cv?.fields.name)
               "

@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
 	<section :class="[
-			(overrideClass ?? 'py-16'),
+			(overrideClass ?? 'py-8 lg:py-16'),
 			addClass
 	]">
 		<slot/>
