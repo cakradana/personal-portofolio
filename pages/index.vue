@@ -47,15 +47,15 @@
           <ul class="grid gap-y-3 mb-10">
             <li class="flex gap-2 items-center">
               <span class="text-primary-800 dark:text-primary-300">✓</span>
-              <span>Developing robust software solutions</span>
+              <span>Building scalable and efficient software solutions</span>
             </li>
             <li class="flex gap-2 items-center">
               <span class="text-primary-800 dark:text-primary-300">✓</span>
-              <span>Intuitive and visually appealing frontend design</span>
+              <span>Designing engaging and user-friendly frontend interfaces</span>
             </li>
             <li class="flex gap-2 items-center">
               <span class="text-primary-800 dark:text-primary-300">✓</span>
-              <span>Creating seamless and user-centric UI/UX experiences</span>
+              <span>Optimizing frontend performance and responsiveness</span>
             </li>
           </ul>
           <div class="flex flex-col lg:flex-row gap-3">
@@ -68,7 +68,7 @@
             class="mx-auto lg:w-96 mb-5 p-1 rounded-2xl bg-gradient-to-br shadow-lg lg:shadow-2xl from-primary-400 to-primary-900 dark:from-primary-300 dark:to-primary-800"
           >
             <div
-              class="relative group bg-gradient-to-t text-center overflow-hidden from-neutral-300 to-neutral-200 dark:to-neutral-800 dark:from-neutral-900 rounded-xl pt-5"
+              class="relative group bg-gradient-to-t text-center overflow-hidden from-neutral-300 to-neutral-200 dark:to-neutral-800 dark:from-neutral-900 rounded-xl"
             >
               <span
                 class="bg-primary-900 dark:bg-primary-400 group-hover:scale-150 transition-all absolute animate-pulse rounded-full bottom-0 translate-y-1/2 blur-3xl left-0 w-full aspect-square"
@@ -81,10 +81,10 @@
                 width="640"
               />
               <div
-                class="absolute z-50 bg-neutral-100 flex place-items-center gap-5 shadow-lg p-2 rounded-xl top-2 right-2"
+                class="absolute z-50 bg-gradient-to-br from-primary-400 to-primary-900 dark:from-primary-300 dark:to-primary-800 flex place-items-center gap-5 shadow-lg p-2 rounded-xl top-2 right-2"
               >
                 <div class="aspect-square w-8 h-8">
-                  <span class="w-full text-2xl">🚀</span>
+                  <span class="w-full text-2xl">☕️</span>
                 </div>
               </div>
             </div>

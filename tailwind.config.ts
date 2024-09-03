@@ -1,17 +1,17 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const primaryColor = {
-    "50": "#fef2f2",
-    "100": "#fde4e3",
-    "200": "#fdcccb",
-    "300": "#faa9a7",
-    "400": "#f47572",
-    "500": "#ea4d49",
-    "600": "#d72f2b",
-    "700": "#b52320",
-    "800": "#95221f",
-    "900": "#7c2220",
-    "950": "#430d0c",
+  "50": "#faf6f2",
+  "100": "#f4eae0",
+  "200": "#e8d3c0",
+  "300": "#d9b798",
+  "400": "#d0a180",
+  "500": "#be7a51",
+  "600": "#b06646",
+  "700": "#93523b",
+  "800": "#774435",
+  "900": "#60392e",
+  "950": "#331c17",
 };
 /** @type {import('tailwindcss').Config} */
 module.exports = {

@@ -1,7 +1,7 @@
 <template>
-  <section-base override-class="pt-7 lg:pt-28 lg:pb-0" add-class="bg-neutral-800 dark:bg-neutral-950 text-white">
+  <section-base override-class="pt-7 lg:pt-14 lg:pb-0" add-class="bg-neutral-800 dark:bg-neutral-950 text-white">
     <SectionContainer>
-      <div class="mb-7 lg:mb-28">
+      <div class="mb-7 lg:mb-14">
         <div class="text-lg flex gap-1 mb-5">
           <h1 v-text="project.fields.title"></h1>
           <span>—</span>

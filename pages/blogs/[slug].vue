@@ -27,8 +27,8 @@
               class="aspect-square w-16 p-1 border-2 border-primary-600 h-16 rounded-full overflow-hidden"
             >
               <nuxt-img
-                src="/img/me-reg.png"
-                class="w-16 aspect-square rounded-full" width="320" height="320"
+                src="/img/my-photo.png"
+                class="w-16 aspect-square rounded-full object-cover object-top" width="320" height="320"
               />
             </div>
           </div>

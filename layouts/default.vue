@@ -2,7 +2,7 @@
   <VitePwaManifest />
   <SpeedInsights />
   <NuxtLoadingIndicator
-    color="repeating-linear-gradient(to right,#f47572 0%,#e05f6b 25%,#cd4a65 50%,#ba355e 100%)"
+    color="repeating-linear-gradient(to right, #d9b798 0%, #b06646 25%, #93523b 50%, #60392e 100%)"
   />
   <div class="bg-white dark:bg-neutral-900 dark:text-primary-50 min-h-screen">
     <div class="relative">

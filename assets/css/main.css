@@ -19,23 +19,23 @@ html {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: rgb(69 10 10) !important;
-  opacity: 0.5;
-  font-weight: 900;
+  color: #331c17 !important;
+  opacity: 0.5 !important;
+  font-weight: 900 !important;
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet {
-  background: rgb(69 10 10) !important;
-  opacity: 0.5;
+  background: #331c17 !important;
+  opacity: 0.5 !important;
   width: 18px !important;
   height: 18px !important;
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1;
+  opacity: 1 !important;
 }
