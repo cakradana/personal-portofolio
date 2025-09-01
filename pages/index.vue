@@ -79,6 +79,7 @@
                 loading="lazy"
                 alt="Cakra"
                 width="640"
+                preload
               />
               <div
                 class="absolute z-50 bg-gradient-to-br from-primary-400 to-primary-900 dark:from-primary-300 dark:to-primary-800 flex place-items-center gap-5 shadow-lg p-2 rounded-xl top-2 right-2"
