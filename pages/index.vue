@@ -11,9 +11,13 @@
               📩 rcakradana@gmail.com
             </a>
             <a
+              :href="`https:${cv?.fields.cv.fields.file.url}`"
               class="inline-block px-3.5 border rounded-full py-1 text-sm font-medium border-primary-800 border-dashed dark:border-primary-300 bg-primary-600 text-primary-800 dark:text-primary-300 bg-opacity-10 hover:bg-primary-300 dark:hover:bg-primary-800 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
-              @click="
-                downloadCV(cv?.fields.cv.fields.file.url, cv?.fields.name)
+              @click.prevent="
+                downloadCV(
+                  `https:${cv?.fields.cv.fields.file.url}`,
+                  `CV_Resume_R Cakradana_${formatDate(`${cv?.sys.updatedAt}`)}.pdf`,
+                )
               "
             >
               ⬇️ Here's my Resume
@@ -114,8 +118,22 @@ onMounted(() => {
   }, 4000);
 });
 
-const downloadCV = (file: string, name: string) => {
-  const url = `https:${file}`;
-  window.open(url, "_blank");
+const downloadCV = async (file: string, name: string) => {
+  try {
+    const response = await fetch(file);
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", name);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error("Error downloading CV:", error);
+    // Fallback to opening in a new tab if there's an error
+    window.open(file, "_blank");
+  }
 };
 </script>

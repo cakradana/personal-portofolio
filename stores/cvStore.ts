@@ -15,6 +15,7 @@ interface CvObject {
     }
     sys: {
         id: string,
+        updatedAt: string,
     }
 }
 
