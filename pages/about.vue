@@ -117,7 +117,7 @@
 useSeoMeta({
   title: "R Cakradana | About",
 
-  ogUrl: "https://rcakradana.me/about",
+  ogUrl: "https://rcakradana.id/about",
   ogTitle: "R Cakradana | About",
 
   twitterTitle: "R Cakradana | About",

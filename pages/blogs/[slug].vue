@@ -69,7 +69,7 @@ useSeoMeta({
   title: `R Cakradana | ${blog.fields.title}`,
   description: `${blog.fields.description}`,
   
-  ogUrl: `https://rcakradana.me/blogs/${blog.fields.slug}`,
+  ogUrl: `https://rcakradana.id/blogs/${blog.fields.slug}`,
   ogTitle: `R Cakradana | ${blog.fields.title}`,
   ogDescription: `${blog.fields.description}`,
   ogImage: `https:${blog.fields.image.fields.file.url}`,

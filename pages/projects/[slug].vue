@@ -70,7 +70,7 @@ useSeoMeta({
   title: `R Cakradana | ${project.fields.title}`,
   description: `${project.fields.description}`,
   
-  ogUrl: `https://rcakradana.me/projects/${project.fields.slug}`,
+  ogUrl: `https://rcakradana.id/projects/${project.fields.slug}`,
   ogTitle: `R Cakradana | ${project.fields.title}`,
   ogDescription: `${project.fields.description}`,
   ogImage: `https:${project.fields.image.fields.file.url}`,

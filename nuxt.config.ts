@@ -87,8 +87,8 @@ export default defineNuxtConfig({
   },
   pwa: {
     manifest: {
-      name: "rcakradana.me",
-      short_name: "rcakradana.me",
+      name: "rcakradana.id",
+      short_name: "rcakradana.id",
       icons: [
         {
           src: "/android-chrome-192x192.png",
@@ -101,7 +101,7 @@ export default defineNuxtConfig({
           type: "image/png",
         },
       ],
-      start_url: "https://rcakradana.me",
+      start_url: "https://rcakradana.id",
       theme_color: "#ffffff",
       background_color: "#ffffff",
       orientation: "portrait",

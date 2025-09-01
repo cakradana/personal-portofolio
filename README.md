@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This is a modern, responsive web application built with Nuxt 3, showcasing my work, blog posts, and professional journey.
 
-🌐 **Live Demo**: [rcakradana.me](https://rcakradana.me)
+🌐 **Live Demo**: [rcakradana.id](https://rcakradana.id)
 
 ## ✨ Features
 
@@ -176,7 +176,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **R. Cakradana**
-- Website: [rcakradana.me](https://rcakradana.me)
+- Website: [rcakradana.id](https://rcakradana.id)
 - Email: [Get in touch](mailto:rcakradana@gmail.com)
 - LinkedIn: [Connect with me](https://linkedin.com/in/rcakradana)
 

@@ -21,7 +21,7 @@ const talks = await getAllTalks();
 useSeoMeta({
   title: 'R Cakradana | Talks',
 
-  ogUrl: 'https://rcakradana.me/talks',
+  ogUrl: 'https://rcakradana.id/talks',
   ogTitle: 'R Cakradana | Talks',
 
   twitterTitle: 'R Cakradana | Talks',

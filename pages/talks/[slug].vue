@@ -69,7 +69,7 @@ useSeoMeta({
   title: `R Cakradana | ${talk.fields.title}`,
   description: `${talk.fields.description}`,
   
-  ogUrl: `https://rcakradana.me/talks/${talk.fields.slug}`,
+  ogUrl: `https://rcakradana.id/talks/${talk.fields.slug}`,
   ogTitle: `R Cakradana | ${talk.fields.title}`,
   ogDescription: `${talk.fields.description}`,
   ogImage: `https:${talk.fields.image.fields.file.url}`,

@@ -19,7 +19,7 @@ import {getAllProjects} from "~/repositories/projectRepository";
 useSeoMeta({
   title: 'R Cakradana | Projects',
   
-  ogUrl: 'https://rcakradana.me/projects',
+  ogUrl: 'https://rcakradana.id/projects',
   ogTitle: 'R Cakradana | Projects',
   
   twitterTitle: 'R Cakradana | Projects',

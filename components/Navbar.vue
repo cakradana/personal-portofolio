@@ -7,7 +7,7 @@
       <div class="relative flex gap-3 items-center">
         <div class="grow">
           <NuxtLink to="/" class="text-lg font-extrabold">
-            <span>rcakradana.me</span>
+            <span>rcakradana.id</span>
           </NuxtLink>
         </div>
         <div class="flex items-center gap-2.5">

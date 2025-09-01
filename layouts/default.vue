@@ -24,14 +24,14 @@ useSeoMeta({
   description: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
   
   ogType: 'website',
-  ogUrl: 'https://rcakradana.me',
+  ogUrl: 'https://rcakradana.id',
   ogTitle: 'R Cakradana',
   ogDescription: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
-  ogImage: 'https://rcakradana.me/img/meta-image.jpeg',
+  ogImage: 'https://rcakradana.id/img/meta-image.jpeg',
   
   twitterCard: 'summary_large_image',
   twitterTitle: 'R Cakradana',
   twitterDescription: 'Discover the work of a Software Engineer, Frontend Developer, and UI/UX Designer',
-  twitterImage: 'https://rcakradana.me/img/meta-image.jpeg',
+  twitterImage: 'https://rcakradana.id/img/meta-image.jpeg',
 })
 </script>

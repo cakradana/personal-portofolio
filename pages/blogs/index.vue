@@ -20,7 +20,7 @@ const blogs = await getAllBlogs();
 useSeoMeta({
   title: "R Cakradana | Blogs",
 
-  ogUrl: "https://rcakradana.me/blogs",
+  ogUrl: "https://rcakradana.id/blogs",
   ogTitle: "R Cakradana | Blogs",
 
   twitterTitle: "R Cakradana | Blogs",
